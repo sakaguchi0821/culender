@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+timerID = setInterval('clock()',1000);
+
+function clock() {
+	document.getElementById("view_clock").innerHTML = getNow();
+}
+
+function getNow() {
+	var now = new Date();
+	var year = now.getFullYear();
+	var mon = now.getMonth()+1;
+	var day = now.getDate();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
+	var s = year + "年" + mon + "月" + day + "日" + hour + "時" + min + "分" + sec + "秒";
+	return s;
+}
+</script>
+<link
+	href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+	rel="stylesheet">
+<link href="css.css" rel="stylesheet">
+<title>schedule</title>
+</head>
+<body>
+
+	<div class="hover_body">
+		<header>
+			<div class="header_logo">
+				<h1>Aグループ共有スケジュール</h1>
+			</div>
+		</header>
+		<div class="month_logo"><h2>&lt;&lt;12月&gt;&gt;</h2></div>
+		<p>現在<span id="view_clock"></span>です。</p>
+		<div class="input_body">
+			<form action="http://user12:8080/Calendar/servlet/Group_a" method="GET">
+
+
+				<div class="name_input">
+
+					<div class="name_color"><p>名前</p></div>
+					<select class="name_area" name="name">
+						<option value="遠藤">遠藤</option>
+						<option value="川村">川村</option>
+						<option value="長谷川">長谷川</option>
+						<option value="坂口">坂口</option>
+						<option value="柳元">柳元</option>
+					</select>
+				</div>
+				<div class="date_input">
+						<div class="name_color"><p>日付</p></div>
+					<select class="date_area" name="date">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
+				</div>
+
+								<div class="schedule_input">
+					<div class="name_color2"><p>予定</p></div>
+<p style="display:inline-block;">
+<input type="radio" checked="checked" name="schedule" value="出張"/>出張
+</p>
+
+<p style="display:inline; ">
+<input type="radio" name="schedule" value="会議"/>会議
+</p>
+
+<p style="display:inline; ">
+<input type="radio" name="schedule" value="有給"/>有給
+</p>
+
+<p style="display:inline; ">
+<input type="radio" name="schedule" value="その他" />その他
+</p>
+			</div>
+
+
+			<div class="button_input">
+			 <input class="button" type="submit" value="▸ sent">
+			</div>
+			</form>
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+@charset "UTF-8";
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image : url("back.jpg");
+	text-align: center;
+	height: 150px;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-size: 100%;
+	background-image: url("back.jpg");
+
+}
+.span
+.header_logo {
+	font: bold large/80% "���S�V�b�N" ;
+}
+
+.input_body {
+	text-align: center;
+			margin: 30px;
+
+}
+
+.name_input {
+	display: flex;
+	justify-content: center;
+
+}
+
+.radio-size{
+		display: flex;
+	justify-content: center;
+}
+
+.date_input {
+	display: flex;
+	justify-content: center;
+			padding:10px;
+}
+
+
+.schedule_input {
+	display: flex;
+	justify-content: center;
+
+}
+
+.schedule_area {
+	display: flex;
+	justify-content: center;
+
+		width:200px;
+		height: 30px;
+}
+
+.button_input {
+	display: flex;
+	justify-content: center;
+
+}
+
+.name_area {
+	display: flex;
+	justify-content: center;
+	width:200px;
+	height: 30px;
+	border: 1px solid #469d9b;
+}
+
+
+.date_area {
+	display: flex;
+	justify-content: center;
+	width:200px;
+	height: 30px;
+	border: 1px solid #469d9b;
+}
+
+
+.name_color{
+	display: flex;
+	justify-content: center;
+	color:#ffffff;
+	 background-color: #469d9b;
+	 align-items: center;
+	 justify-content: center;
+	width:200px;
+	height: 30px;
+	border-color:  #469d9b;
+	letter-spacing:15px;
+	margin-right: 25px;
+
+}
+.name_color2{
+	display: flex;
+	justify-content: center;
+	color:#ffffff;
+	 background-color: #469d9b;
+	 align-items: center;
+	 justify-content: center;
+	width:200px;
+	height: 30px;
+	border-color:  #469d9b;
+	letter-spacing:15px;
+
+}
+
+
+
+
+.button {
+	display: flex;
+	justify-content: center;
+	width:100px;
+	height: 30px;
+	font:#469d9b;
+	 box-shadow: 3px 3px 3px gray;
+	 border: 2px solid #469d9b;
+
+}
+
+
+
+
+
+.table1{
+	width:100%;
+	table-layout: fixed;
+font-size:16px;
+
+}
+.table1 th{
+	text-align:left;
+	vertical-align: top;
+
+
+}
+
+.table1 tr{
+	text-align:left;
+	vertical-align: top;
+
+}
+.a{
+	display: inline;
+	font-weight:normal;
+	font-size: 13px;
+
+}
+
+
+.table1 td{
+font-weight:bold;
+	height:130px;
+
+}
+
+.sunday{
+	color:red;
+}
+.saturday{
+	color:blue;
+}
+tr th:nth-of-type(1) {
+	border-bottom:solid 1px;
+border-color: red;
+}
+tr td:nth-of-type(1) {
+	border-bottom:solid 1px;
+border-color: red;
+}
+tr th:nth-of-type(2) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr td:nth-of-type(2) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr th:nth-of-type(3) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr td:nth-of-type(3) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr th:nth-of-type(4) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr td:nth-of-type(4) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr th:nth-of-type(5) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr td:nth-of-type(5) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr th:nth-of-type(6) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr td:nth-of-type(6) {
+	border-bottom:solid 1px;
+border-color: black;
+}
+tr th:nth-of-type(7) {
+	border-bottom:solid 1px;
+border-color: blue;
+}
+tr td:nth-of-type(7) {
+	border-bottom:solid 1px;
+border-color: blue;
+}
